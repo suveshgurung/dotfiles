@@ -1,13 +1,13 @@
 vim.g.mapleader = " "
 vim.g.clipboard = {
-  name = "wl-clipboard",
+  name = "xclip",
   copy = {
-    ["+"] = "wl-copy",
-    ["*"] = "wl-copy",
+    ["+"] = "xclip -selection clipboard",
+    ["*"] = "xclip -selection clipboard",
   },
   paste = {
-    ["+"] = "wl-paste",
-    ["*"] = "wl-paste",
+    ["+"] = "xclip -selection clipboard -o",
+    ["*"] = "xclip -selection clipboard -o",
   },
   cache_enabled = true,
 }
